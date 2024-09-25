@@ -1,0 +1,152 @@
+/* Estilo geral do site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #fdfaf6;
+    color: #444;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #f3e9e2;
+    color: #444;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e3d4c7;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    color: #b1746f;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #b1746f;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d1a29f;
+}
+.forma{
+    width: 100%;
+    height: 2px;
+    z-index: -1; /* Coloca o título abaixo do contêiner de programas */
+    position: absolute;
+    top: 300px; /* Ajuste este valor para controlar o quanto o ícone ultrapassa o topo do cartão */
+ 
+}
+.forma img{
+    width: 100%;
+}
+   /*..................*/
+
+/* Principal */
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #b1746f;
+}
+
+.book-catalog {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Estilo dos itens de livro */
+.book-item {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 280px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.book-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.book-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #5f4b4b;
+}
+
+.book-item p {
+    color: #7b6d68;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+/* Botão de compra */
+.buy-btn {
+    display: inline-block;
+    background-color: #b1746f;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.buy-btn:hover {
+    background-color: #d88a85;
+    transform: translateY(-4px);
+}
+
+/* Rodapé */
+footer {
+    background-color: #f3e9e2;
+    color: #444;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid #e3d4c7;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #b1746f;
+}
